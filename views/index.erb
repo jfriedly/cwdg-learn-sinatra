@@ -1,0 +1,7 @@
+<ul>
+    <% @lamps.each do |lamp| %>
+        <li>
+          <a href="/lamps/<%= lamp.id %>"><%= lamp.id %>. <%= lamp.name %> Lamp: $<%= lamp.price %></a>
+        </li>
+    <% end %>
+</ul>
